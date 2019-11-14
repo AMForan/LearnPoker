@@ -1,0 +1,54 @@
+<style>
+
+
+head{
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-style: bold;
+}
+
+body {
+  color: black;
+  text-align: center;
+  background-color: lightblue;
+}
+
+p {
+  font-family: verdana;
+  font-size: 14px;
+} 
+
+button{
+	display: block;
+	text-align: center;
+	font-style: bold;
+}
+
+h1 {
+	text-align: center;;
+}
+
+h2 {
+	text-align: center;;
+}
+
+h3 {
+	text-align: center;;
+}
+
+h4 {
+	text-align: center;;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+}
+
+</style>

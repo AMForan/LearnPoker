@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>	
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="LearnPoker.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+		<script src="cardEvaluation.js"> </script>
+
+		<title>	Learn Poker</title>						
+	</head>
+
+	<body>
+		<header>
+			<h1>Learn Poker</h1>
+		</header>
+		<p>
+			This website is a tool to help you pick the hand and bet size based on your position, investment, number of players and how your opponents play
+		</p>
+		
+		<div ng-app="">					
+				
+				<div id=firstCard>
+					<h4>Pick your first card (Value and Suit)</h4>	
+					<select id=firstValue>
+						<option placeholder="">Enter a value</option>
+						<option value="Ace">Ace</option>
+						<option value="King">King</option>
+						<option value="Queen">Queen</option>
+						<option value="Jack">Jack</option>
+						<option value="Ten">Ten</option>
+						<option value="9">9</option>
+						<option value="8">8</option>
+						<option value="7">7</option>
+						<option value="6">6</option>
+						<option value="5">5</option>
+						<option value="4">4</option>
+						<option value="3">3</option>
+						<option value="2">2</option>		
+					</select>	
+
+					<select id=firstSuit>
+						<option placeholder="">Enter a suit</option>
+						<option value="Clubs">Clubs</option>
+						<option value="Diamonds">Diamonds</option>
+						<option value="Hearts">Hearts</option>
+						<option value="Spades">Spades</option>
+					</select>
+				</div>
+
+				<div id=secondCard>
+						<h4>Pick your second card (Value and Suit)</h4>
+						<select id=secondValue>
+							<option placeholder="">Enter a value</option>
+							<option value="Ace">Ace</option>
+							<option value="King">King</option>
+							<option value="Queen">Queen</option>
+							<option value="Jack">Jack</option>
+							<option value="Ten">Ten</option>
+							<option value="9">9</option>
+							<option value="8">8</option>
+							<option value="7">7</option>
+							<option value="6">6</option>
+							<option value="5">5</option>
+							<option value="4">4</option>
+							<option value="3">3</option>
+							<option value="2">2</option>		
+						</select>
+
+						<select id=secondSuit>
+							<option placeholder="">Enter a suit</option>
+							<option value="Clubs">Clubs</option>
+							<option value="Diamonds">Diamonds</option>
+							<option value="Hearts">Hearts</option>
+							<option value="Spades">Spades</option>
+						</select>
+				</div>
+
+				<div id=evaluateButton>
+					<button type="button"
+					onclick="document.getElementById('firstValue', 'firstSuit', 'secondValue', 'secondSuit').InnerHTML = cardEvaluation">
+					Click to Evaluate.
+					</button>
+				</div>
+				
+		</div>			
+
+	</body>	
+
+	<div class="footer">
+  		<p>Copyright @ Andrew Foran</p>
+	</div>
+	
+
+</html>
