@@ -20,10 +20,8 @@ p {
   font-size: 14px;
 } 
 
-button{
-	display: block;
-	text-align: center;
-	font-style: bold;
+button{	
+	margin: 15px 2px;
 }
 
 h1 {

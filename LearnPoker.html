@@ -12,7 +12,7 @@
 		<title>	Learn Poker</title>						
 	</head>
 
-	<body>
+	<body class="handInput">
 		<header>
 			<h1>Learn Poker</h1>
 		</header>
@@ -24,7 +24,7 @@
 				
 				<div id=firstCard>
 					<h4>Pick your first card (Value and Suit)</h4>	
-					<select id=firstValue>
+					<select type="text" id=firstValue>
 						<option placeholder="">Enter a value</option>
 						<option value="Ace">Ace</option>
 						<option value="King">King</option>
@@ -40,6 +40,7 @@
 						<option value="3">3</option>
 						<option value="2">2</option>		
 					</select>	
+					
 
 					<select id=firstSuit>
 						<option placeholder="">Enter a suit</option>
@@ -48,6 +49,8 @@
 						<option value="Hearts">Hearts</option>
 						<option value="Spades">Spades</option>
 					</select>
+
+					<input type="submit" value="Submit">
 				</div>
 
 				<div id=secondCard>
@@ -58,7 +61,7 @@
 							<option value="King">King</option>
 							<option value="Queen">Queen</option>
 							<option value="Jack">Jack</option>
-							<option value="Ten">Ten</option>
+							<option value="10">10</option>
 							<option value="9">9</option>
 							<option value="8">8</option>
 							<option value="7">7</option>
@@ -76,15 +79,29 @@
 							<option value="Hearts">Hearts</option>
 							<option value="Spades">Spades</option>
 						</select>
+
+					<input type="submit" value="Submit">	
 				</div>
 
-				<div id=evaluateButton>
-					<button type="button"
-					onclick="document.getElementById('firstValue', 'firstSuit', 'secondValue', 'secondSuit').InnerHTML = cardEvaluation">
-					Click to Evaluate.
+				<div id=evaluateButton>					
+					<button type="button" onclick="showCards()"> Click to Show.
 					</button>
-				</div>
-				
+					<!-- -->					
+				</div>		
+
+				<div id =cardValueButton>
+					<button type="button" onclick=" loadSettings()"> Card Value.
+					</button>
+					<!-- -->
+				</div>	
+
+				<div id =resetButton>
+					<button type="button" onclick=" resetButton()"> Reset.
+					</button>
+					<!-- -->
+				</div>		
+
+				<p id=displayCards></p>			
 		</div>			
 
 	</body>	
